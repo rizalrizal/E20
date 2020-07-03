@@ -1,0 +1,521 @@
+/* CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6,  blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* CSS Reset*/
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content {
+  font-size: 1em;
+  color: #999;
+  line-height: 1.8em;
+}
+
+/* header */
+
+header {
+  height: 65px; 
+  width: 100%;
+  background-color: #da6f28;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+header .container ul {
+  list-style: none;
+  overflow: hidden;
+  background-color: #da6f28;
+}
+
+header .container li a {
+  display: block;
+  color: #FCE1CC;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+header .container li a:hover,
+header .container .menu-btn:hover {
+  background-color : #2F2E41;
+  color: #fff; 
+}
+
+header .container .logo {
+  margin-left: 15px;
+  color: #FCE1CC;
+  display: block;
+  float: left;
+  font-size: 20px;
+  padding: 22px 0px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .container .logo:before {
+    content: "";
+    background: url('../img/coffe-icon.png') no-repeat;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right:  5px;
+  }
+
+/* menu */
+
+header .container .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+header .container .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 31px 15px;
+  position: relative;
+  user-select: none;
+}
+
+header .container .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+header .container .menu-icon .navicon:before,
+header .container .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+header .container .menu-icon .navicon:before {
+  top: 5px;
+}
+
+header .container .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+header .container .menu-btn {
+  display: none;
+}
+
+header .container .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+header .container .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+header .container .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+header .container .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+header .container .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+header .container .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+
+.banner{ 
+
+	margin-top: 65px; 
+	overflow: hidden;
+}
+
+.column{
+	float: left;
+	width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.banner-left{
+	color: #000;
+	padding-top: 150px;
+}
+
+.banner-left h1 {
+  font-weight: normal;
+  font-size: 45px;
+  
+}
+.banner-left p {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.banner-right img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* Punya Desfi */
+
+.katalog-wrapper {
+    margin: 0;
+    padding: 20px 0 80px 0;
+}
+
+h2 { color: #25161b; }
+
+.caption { color: #8e8b82; }
+
+.klog-item { padding-bottom: 20px; }
+
+.klog-item a {
+    text-decoration: none;
+    color: #25161b;
+    font-weight: bold;
+    padding: 0;
+    line-height: 0.7;
+}
+
+.klog-item a:hover { text-decoration: underline; }
+
+.katalog {
+    margin-bottom:30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.klog-icon { width: 25%; }
+
+.klog-icon img { width: 100%; }
+
+a.klog-icon:hover { background-color:rgba(124, 60, 33, 0.859); }
+
+.klog-item { width: 25%; padding-right: 15px; }
+
+.button { width: 100%; text-align: center; }
+
+.btn:hover { opacity: 1; }
+
+.btn {
+    background-color: #da6f28;
+    cursor: pointer;
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.team-wrapper {
+    margin: 0;
+    background-color: rgba(249, 196, 154, 0.5);
+    text-align: center;
+    padding: 40px 0px 80px 0;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.anggota { width: 20%; font-weight: bold; }
+
+.anggota img {
+    border-radius: 100%;
+    border: 5px solid #b9ac92;
+    width: 70%;
+}
+
+.kontak-wrapper {
+    margin: 0;
+    padding: 40px 0;
+    background-color: rgba(232, 228, 225, 0.4);
+}
+
+.kontak { display: flex; flex-wrap: wrap; }
+
+.img-left, .form-right { width: 50%; }
+
+.img-left img { width: 100%; opacity: 0.9; }
+
+.form-right { text-align: center; }
+
+.texfieldsimbak, .texfieldsimbak {
+    width: 70%;
+    padding: 15px;
+    border: 1px solid #dee7ec;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.texfieldsimbak:hover, .texfieldsimbak:hover { border: 1px solid #f9c49a; }
+
+@media all and (max-width: 1000px) {
+    .klog-item { width: 50%; padding-bottom: 20px; }
+    
+    .anggota { width: 50%; }
+
+    .img-left, .form-right { width: 100%; }
+
+    .form-right{
+      padding-top: 40px;
+    }    
+    
+    .texfieldsimbak, .texfieldsimbak { width: 100%; }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+    .klog-item { width: 100%; padding-bottom: 20px; }
+
+    .anggota { width: 100%; }
+
+    .img-left, .form-right { width: 100%; }
+
+    .form-right{
+      padding-top: 40px;
+    }
+    .texfieldsimbak, .texfieldsimbak { width: 100%; }
+}
+
+.h2-reset{
+   display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h2-reset2{
+   display: block;
+  font-size: 1.5em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+
+/* Fajri */
+
+footer { background-color: : background-color: rgba(232, 228, 225, 0.4);; padding: 90px 0}
+
+.footer-container { max-width: 90%; margin: auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap-reverse;}
+
+.logo-footer { width: 180px}
+
+.social-media { margin: 20px 0}
+
+.social-media a { color: #001a21; margin-right: 25px; font-size: 22px; text-decoration: none; transition: .3s linear}
+
+.social-media a:hover { color: chocolate;}
+
+.right-col h1 { font-size: 26px;}
+
+.border {width: 100px; height: 4px; background: chocolate;}
+
+.newsletter-form { display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
+
+.txtb { flex: 1; padding: 18px 40px; font-size: 16px; color: #293043; background: #ddd; border: none; font-weight: 700; outline: none; border-radius: 30px; min-width: 260px;}
+
+.btn-footer { padding: 18px 40px; font-size: 16px; color: #f1f1f1; background: chocolate; border: none; font-weight: 700; outline: none; border-radius: 30px; margin-left: 20px; cursor: pointer; transition: opacity .3s linear;}
+
+.btn-footer hover { opacity: 7;}
+
+
+
+
+
+/* Untuk Tab */
+@media all and (max-width:1000px) {
+    .footer-container { width: auto}
+    .right-col { width: 100%; margin-bottom: 60px;}
+    .left-col { width: 100%; text-align: center;}
+}
+
+/* Untuk HP */ 
+@media all and (max-width: 670px) {
+    .btn-footer { margin: 0; width: 100%; margin-top: 20px;}
+}
+
+
+
+/* Media Query */
+
+/* 48em = 768px */
+
+html{
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 49em) {
+  .container {
+    width: 90%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  header .container .logo {
+    color: #FCE1CC;
+    display: block;
+    float: left;
+    font-size: 20px;
+    padding: 22px 0px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  header .container .logo:before {
+    content: "";
+    background: url('../img/coffe-icon.png') no-repeat;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right:  5px;
+  }
+
+
+  header .container li {
+    float: left;
+  }
+  header .container li a {
+    padding: 20px 20px;
+  }
+  header .container .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    line-height: 25px;
+  }
+  header .container .menu-icon {
+    display: none;
+  }
+ 
+}
+
+@media screen and (max-width: 49em) {
+  .column {
+    width: 100%;
+    margin-bottom: 25px;    
+  }
+  .banner{ 
+    text-align: center;
+  }
+  .banner-left {  
+    padding-top: 50px;
+  }
+  
+  .tentang{
+    padding: 0 15px;
+  }
+
+  .katalog-wrapper{
+    padding: 20px 0 80px 15px;
+  }
+
+  .form-right{
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 40px;
+  }
+}
+
+.tentang {
+  background-color: rgba(232, 228, 225, 0.4);
+  padding: 40px 15px;
+}
+
+
