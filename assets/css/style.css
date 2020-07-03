@@ -13,36 +13,36 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
   font-family: 'Roboto', sans-serif;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 a {
@@ -198,13 +198,13 @@ header .container .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
 .banner{ 
 
-	margin-top: 65px; 
-	overflow: hidden;
+  margin-top: 65px; 
+  overflow: hidden;
 }
 
 .column{
-	float: left;
-	width: 50%;
+  float: left;
+  width: 50%;
 }
 
 .row:after {
@@ -215,8 +215,8 @@ header .container .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
 
 .banner-left{
-	color: #000;
-	padding-top: 150px;
+  color: #000;
+  padding-top: 150px;
 }
 
 .banner-left h1 {
@@ -242,7 +242,7 @@ header .container .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
 
 
-/* Punya Desfi */
+/* Punya Dea */
 
 .katalog-wrapper {
     margin: 0;
@@ -305,9 +305,14 @@ a.klog-icon:hover { background-color:rgba(124, 60, 33, 0.859); }
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    text-align: center;
 }
 
-.anggota { width: 20%; font-weight: bold; }
+.anggota { 
+  width: 20%; 
+  font-weight: bold; 
+  margin-bottom: 10px;
+}
 
 .anggota img {
     border-radius: 100%;
@@ -341,9 +346,9 @@ a.klog-icon:hover { background-color:rgba(124, 60, 33, 0.859); }
 .texfieldsimbak:hover, .texfieldsimbak:hover { border: 1px solid #f9c49a; }
 
 @media all and (max-width: 1000px) {
-    .klog-item { width: 50%; padding-bottom: 20px; }
+    .klog-item { width: 50%; }
     
-    .anggota { width: 50%; }
+    .anggota { width: 33%; }
 
     .img-left, .form-right { width: 100%; }
 
@@ -356,15 +361,12 @@ a.klog-icon:hover { background-color:rgba(124, 60, 33, 0.859); }
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
-    .klog-item { width: 100%; padding-bottom: 20px; }
 
-    .anggota { width: 100%; }
+    .anggota { width: 50%; }
 
     .img-left, .form-right { width: 100%; }
 
-    .form-right{
-      padding-top: 40px;
-    }
+    .form-right { padding-top: 40px; }
     .texfieldsimbak, .texfieldsimbak { width: 100%; }
 }
 
